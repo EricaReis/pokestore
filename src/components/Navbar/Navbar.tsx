@@ -6,8 +6,8 @@ export default function Navbar(): JSX.Element {
     <Container>
       <button type="button">Pokemon</button>
       <div>
-        <Button />
-        <button type="button">Pokemon</button>
+        <Button title="Pokemon" />
+        <Button title="Loja" />
       </div>
     </Container>
   );
