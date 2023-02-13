@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
-import { Container } from "./Navbar.styles";
+import { Container, ButtonContainer } from "./Navbar.styles";
 
 export default function Navbar(): JSX.Element {
   const navigate = useNavigate();
@@ -10,10 +10,15 @@ export default function Navbar(): JSX.Element {
       <button type="button" onClick={() => navigate("/")}>
         Pokémon
       </button>
-      <div>
-        <Button title="Pokemon" onClick={() => navigate("/")} />
-        <Button title="Loja" onClick={() => navigate("/example")} />
-      </div>
+      <ButtonContainer>
+        <Button title="Padrão" onClick={() => navigate("/example")} />
+        <Button title="Com borda" outlined onClick={() => navigate("/")} />
+        <Button
+          title="Sem borda"
+          borderless
+          onClick={() => navigate("/example")}
+        />
+      </ButtonContainer>
     </Container>
   );
 }

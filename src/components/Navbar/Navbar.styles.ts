@@ -8,3 +8,8 @@ export const Container = styled.div`
   padding-top: 2rem;
   padding-bottom: 2rem;
 `;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;

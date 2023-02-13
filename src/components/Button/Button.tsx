@@ -1,10 +1,22 @@
 import { ButtonProps } from "./Button.interfaces";
-import { Container } from "./Button.styles";
+import { Container, StyledButton } from "./Button.styles";
 
-export default function Button({ title, ...rest }: ButtonProps): JSX.Element {
+export default function Button({
+  title,
+  outlined = false,
+  borderless = false,
+  ...rest
+}: ButtonProps): JSX.Element {
   return (
-    <button type="button" {...rest}>
-      {title}
-    </button>
+    <Container>
+      <StyledButton
+        outlined={outlined}
+        borderless={borderless}
+        type="button"
+        {...rest}
+      >
+        {title}
+      </StyledButton>
+    </Container>
   );
 }
