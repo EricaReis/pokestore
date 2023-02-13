@@ -11,13 +11,8 @@ export default function Navbar(): JSX.Element {
         Pokémon
       </button>
       <ButtonContainer>
-        <Button title="Padrão" onClick={() => navigate("/example")} />
-        <Button title="Com borda" outlined onClick={() => navigate("/")} />
-        <Button
-          title="Sem borda"
-          borderless
-          onClick={() => navigate("/example")}
-        />
+        <Button title="Pokemon" onClick={() => navigate("/")} />
+        <Button title="Loja" onClick={() => navigate("/example")} />
       </ButtonContainer>
     </Container>
   );
