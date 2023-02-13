@@ -7,10 +7,12 @@ export default function Navbar(): JSX.Element {
 
   return (
     <Container>
-      <button type="button">Pokemon</button>
+      <button type="button" onClick={() => navigate("/")}>
+        Pokémon
+      </button>
       <div>
-        <button title="Pokemon" onClick={() => navigate("/")} />
-        <button title="Loja" onClick={() => navigate("/example")} />
+        <Button title="Pokemon" onClick={() => navigate("/")} />
+        <Button title="Loja" onClick={() => navigate("/example")} />
       </div>
     </Container>
   );
