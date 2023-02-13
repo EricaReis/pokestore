@@ -1,1 +1,4 @@
-export interface ButtonProps {}
+export interface ButtonProps {
+  title: string;
+  onClick: () => {};
+}

@@ -1,12 +1,14 @@
-import Home from "./pages/Home/Home";
 import GlobalStyles from "./styles/global.styles";
+import Router from "./routes/routes";
+import { Provider } from "react-redux";
+import store from "./data/store";
 
 function App() {
   return (
-    <>
-      <Home />
+    <Provider store={store}>
       <GlobalStyles />
-    </>
+      <Router />
+    </Provider>
   );
 }
 
