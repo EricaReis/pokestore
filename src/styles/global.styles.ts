@@ -8,4 +8,12 @@ export default createGlobalStyle`
   html, body, #root {
     height: 100vh;
   }
+
+  body, input, button, textarea, h1 {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+  }
+
+  button {
+    cursor: pointer
+  }
 `;
