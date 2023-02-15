@@ -1,8 +1,11 @@
-import { useEffect } from "react";
-import { getAllItems, getItem } from "../../services/Items/Items";
-import { getAllPokemons, getPokemon } from "../../services/Pokemon/Pokemon";
+import Navbar from "../../components/Navbar/Navbar";
 import { Container } from "./Home.styles";
 
 export default function Home(): JSX.Element {
-  return <Container>Home</Container>;
+  return (
+    <Container>
+      <Navbar />
+      <h1>Página Inicial</h1>
+    </Container>
+  );
 }
