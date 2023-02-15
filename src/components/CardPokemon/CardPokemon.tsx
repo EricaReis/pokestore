@@ -12,7 +12,6 @@ export default function CardPokemon({ name }: CardPokemonProps): JSX.Element {
 
   async function getPokemonData() {
     const response = await getPokemon(name);
-    console.log(response.types);
     setPokemonInfo(response);
   }
 
