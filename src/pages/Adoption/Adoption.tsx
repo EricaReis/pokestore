@@ -3,7 +3,7 @@ import CardPokemon from "../../components/CardPokemon/CardPokemon";
 import Navbar from "../../components/Navbar/Navbar";
 import { pokemonProps } from "../../services/Pokemon/Pokemon.interfaces";
 import { getAllPokemons } from "../../services/Pokemon/Pokemon";
-import { Container } from "./Adoption.styles";
+import { Container, CardsContainer } from "./Adoption.styles";
 
 export default function Adoption(): JSX.Element {
   const [pokemonList, setPokemonList] = useState<pokemonProps[]>([]);
@@ -22,9 +22,9 @@ export default function Adoption(): JSX.Element {
       <Navbar />
       <h1>Adote um pokemon!</h1>
       {pokemonList?.map((pokemon) => (
-        <>
-          <CardPokemon key={pokemon.name} name={pokemon.name} />
-        </>
+        <CardsContainer key={pokemon.name}>
+          <CardPokemon name={pokemon.name} />
+        </CardsContainer>
       ))}
     </Container>
   );

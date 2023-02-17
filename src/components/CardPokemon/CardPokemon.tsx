@@ -22,13 +22,6 @@ export default function CardPokemon({ name }: CardPokemonProps): JSX.Element {
   return (
     <Container>
       <p>{pokemonInfo?.name}</p>
-      <p>
-        {pokemonInfo?.abilities.map((ability) => (
-          <p>{ability.ability.name}</p>
-        ))}
-      </p>
-      <p>{pokemonInfo?.types.map((pokemon) => pokemon.type.name)}</p>
-      <p>{pokemonInfo?.height}</p>
       <img src={pokemonInfo?.sprites.front_default} alt={pokemonInfo?.name} />
     </Container>
   );
