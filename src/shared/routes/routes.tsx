@@ -1,5 +1,5 @@
-import Home from "../pages/Home/Home";
-import Example from "../pages/Example/Example";
+import Home from "../../presentation/pages/Home/Home";
+import Example from "../../presentation/pages/Example/Example";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function Router(): JSX.Element {

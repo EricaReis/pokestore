@@ -1,5 +1,5 @@
-import { api } from "../api";
-import { pokemonProps } from "./Items.interfaces";
+import api from "../api";
+import { pokemonProps } from "../pokemon/pokemonService.types";
 
 const limit = 800;
 

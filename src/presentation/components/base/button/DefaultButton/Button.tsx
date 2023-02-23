@@ -1,12 +1,12 @@
-import { ButtonProps } from "./Button.interfaces";
+import { DefaultButtonProps } from "./Button.interfaces";
 import { Container, StyledButton } from "./Button.styles";
 
-export default function Button({
+export default function DefaultButton({
   title,
   outlined = false,
   borderless = false,
   ...rest
-}: ButtonProps): JSX.Element {
+}: DefaultButtonProps): JSX.Element {
   return (
     <Container>
       <StyledButton

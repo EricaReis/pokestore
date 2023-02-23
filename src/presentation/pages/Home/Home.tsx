@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/base/Navbar/Navbar";
 import { Container } from "./Home.styles";
 
 export default function Home(): JSX.Element {

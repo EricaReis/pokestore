@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/base/Navbar/Navbar";
 import { Container } from "./Example.styles";
 
 export default function Example(): JSX.Element {

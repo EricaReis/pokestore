@@ -1,12 +1,13 @@
 import { ButtonHTMLAttributes } from "react";
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface DefaultButtonProps
+  extends ButtonHTMLAttributes<HTMLButtonElement> {
   title: string;
   outlined?: boolean;
   borderless?: boolean;
 }
 
-export interface StyledButtonProps {
+export interface StyledDefaultButtonProps {
   outlined: boolean;
   borderless: boolean;
 }

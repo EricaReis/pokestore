@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
-import { StyledButtonProps } from "./Button.interfaces";
+import { StyledDefaultButtonProps } from "./Button.interfaces";
 
 export const Container = styled.div`
   display: flex;
 `;
 
-export const StyledButton = styled.button<StyledButtonProps>`
+export const StyledButton = styled.button<StyledDefaultButtonProps>`
   display: flex;
   border: none;
   box-sizing: border-box;
