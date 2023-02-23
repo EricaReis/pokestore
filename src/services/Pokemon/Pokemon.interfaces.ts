@@ -31,17 +31,38 @@ export type PokemonType =
   | "steel"
   | "water";
 
+export interface Sprites {
+  back_default: string | undefined;
+  back_female: string | undefined;
+  back_shiny: string | undefined;
+  back_shiny_female: string | undefined;
+  front_default: string | undefined;
+  front_female: string | undefined;
+  front_shiny: string | undefined;
+  front_shiny_female: string | undefined;
+}
+
+export interface Types {
+  slot: number;
+  type: {
+    name: string;
+    url: string;
+  };
+}
+
 export type Pokemon = {
   id: number;
   name: string;
-  imageUrl: string;
+  sprites: Sprites;
   height: number;
   weight: number;
   stats: { name: string; baseStat: number }[];
-  types: PokemonType[];
-  specie: Specie | null;
+  types: Types[];
+  species: Specie | null;
   abilities: {
-    name: string;
-    isHidden: boolean;
+    ability: {
+      name: string;
+      isHidden: boolean;
+    };
   }[];
 };
