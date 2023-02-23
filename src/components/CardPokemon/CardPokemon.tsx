@@ -21,7 +21,7 @@ export default function CardPokemon({ name }: CardPokemonProps): JSX.Element {
 
   return (
     <Container>
-      <p>{pokemonInfo?.name}</p>
+      <h3>{pokemonInfo?.name}</h3>
       <img src={pokemonInfo?.sprites.front_default} alt={pokemonInfo?.name} />
     </Container>
   );
