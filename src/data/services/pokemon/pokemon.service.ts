@@ -1,18 +1,29 @@
 import api from "../api";
-import { Pokemon, pokemonProps } from "../pokemon/pokemonService.types";
+import {
+  IPersistencePokemonList,
+  IPersistencePokemonData,
+  IDomainPokemonData,
+} from "../pokemon/pokemonService.types";
+import { PokemonDataMapper, PokemonListMapper } from "./mappers";
 
 const limit = 8;
 
-export const getAllPokemons = async (): Promise<pokemonProps[]> => {
-  const { data } = await api.get("/pokemon", {
-    params: {
-      limit: limit,
-    },
-  });
-  return data.results;
-};
+class PokemonService {
+  async getAllPokemons(): Promise<IPersistencePokemonList> {
+    const { data } = await api.get<IPersistencePokemonList>("/pokemon", {
+      params: {
+        limit: limit,
+      },
+    });
 
-export const getPokemon = async (id: number | string): Promise<Pokemon> => {
-  const { data } = await api.get(`/pokemon/${id}`);
-  return data;
-};
+    return PokemonListMapper.toDomain(data);
+  }
+
+  async getPokemon(id: number | string): Promise<IDomainPokemonData> {
+    const { data } = await api.get<IPersistencePokemonData>(`/pokemon/${id}`);
+
+    return PokemonDataMapper.toDomain(data);
+  }
+}
+
+export default new PokemonService();
