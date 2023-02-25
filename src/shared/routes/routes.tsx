@@ -1,6 +1,6 @@
-import Home from 'presentation/pages/Home/Home.page';
-import Example from 'presentation/pages/Example/Example.page';
 import Adoption from 'presentation/pages/Adoption/Adoption.page';
+import Example from 'presentation/pages/Example/Example.page';
+import Home from 'presentation/pages/Home/Home.page';
 
 export const routes = [
   {
