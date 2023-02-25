@@ -1,4 +1,4 @@
-import { useLang } from "../../../data/store/slices/lang/useLang";
+import { useLang } from "data/store/slices/lang/useLang";
 import { Container } from "./Example.styles";
 
 export default function Example(): JSX.Element {

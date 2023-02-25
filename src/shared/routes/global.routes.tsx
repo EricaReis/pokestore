@@ -1,4 +1,4 @@
-import { NotFound } from "../../presentation/pages/NotFound/NotFound.page";
+import { NotFound } from "presentation/pages/NotFound/NotFound.page";
 
 export const globalRoutes = [
   {
