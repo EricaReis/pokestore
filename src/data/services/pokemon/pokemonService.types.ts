@@ -1,6 +1,13 @@
-export interface pokemonProps {
+export interface IPokemon {
   name: string;
   url: string;
+}
+[];
+export interface IPersistencePokemonList {
+  count?: number;
+  next?: string;
+  previous?: string | null;
+  results: IPokemon[];
 }
 
 export type Specie = {
@@ -50,7 +57,24 @@ export interface Types {
   };
 }
 
-export type Pokemon = {
+export type IPersistencePokemonData = {
+  id: number;
+  name: string;
+  sprites: Sprites;
+  height: number;
+  weight: number;
+  stats: { name: string; baseStat: number }[];
+  types: Types[];
+  species: Specie | null;
+  abilities: {
+    ability: {
+      name: string;
+      isHidden: boolean;
+    };
+  }[];
+};
+
+export type IDomainPokemonData = {
   id: number;
   name: string;
   sprites: Sprites;

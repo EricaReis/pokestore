@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import { getPokemon } from "../../../../data/services/pokemon/pokemon.service";
-import { Pokemon } from "../../../../data/services/pokemon/pokemonService.types";
+import pokemonService from "../../../../data/services/pokemon/pokemon.service";
+import { IDomainPokemonData } from "../../../../data/services/pokemon/pokemonService.types";
 
 import { CardPokemonProps } from "./CardPokemon.interfaces";
 import { Container } from "./CardPokemon.styles";
 
 export default function CardPokemon({ name }: CardPokemonProps): JSX.Element {
-  const [pokemonInfo, setPokemonInfo] = useState<Pokemon>();
+  const [pokemonInfo, setPokemonInfo] = useState<IDomainPokemonData>();
 
   async function getPokemonData() {
-    const response = await getPokemon(name);
+    const response = await pokemonService.getPokemon(name);
     setPokemonInfo(response);
   }
 
