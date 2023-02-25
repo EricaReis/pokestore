@@ -1,7 +1,7 @@
 import {
   IDomainPokemonData,
   IPersistencePokemonData,
-} from "../pokemonService.types";
+} from '../pokemonService.types';
 
 export class PokemonDataMapper {
   static toDomain(

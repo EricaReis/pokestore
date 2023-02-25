@@ -1,4 +1,4 @@
-import { IPersistencePokemonList, IPokemon } from "../pokemonService.types";
+import { IPersistencePokemonList, IPokemon } from '../pokemonService.types';
 
 export class PokemonListMapper {
   static toDomain(

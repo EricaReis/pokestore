@@ -1,6 +1,6 @@
-import { type langJSON } from "../../../../shared/lang";
+import { type langJSON } from 'shared/lang';
 
-export type LanguageKeyType = "pt" | "en";
+export type LanguageKeyType = 'pt' | 'en';
 
 export interface ILangSlice {
   lang: typeof langJSON;
