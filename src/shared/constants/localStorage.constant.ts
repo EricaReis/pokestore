@@ -1,3 +1,3 @@
 export const localStorageKeys = {
-  lang: "@poke/lang",
+  lang: '@poke/lang',
 };

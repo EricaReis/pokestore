@@ -1,8 +1,8 @@
-import api from "../api";
-import { itemsProps } from "./itemsService.types";
+import api from '../api';
+import { itemsProps } from './itemsService.types';
 
 export const getAllItems = async (): Promise<itemsProps> => {
-  const { data } = await api.get("/item");
+  const { data } = await api.get('/item');
   return data.results;
 };
 

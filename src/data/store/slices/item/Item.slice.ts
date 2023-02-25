@@ -1,11 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState: unknown = {
   item: {},
 };
 
 const slice = createSlice({
-  name: "item",
+  name: 'item',
   initialState,
   reducers: {
     setFavoriteItem: (state, action) => {

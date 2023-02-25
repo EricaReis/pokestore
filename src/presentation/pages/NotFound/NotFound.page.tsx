@@ -1,4 +1,4 @@
-import { Container } from "./NotFound.styles";
+import { Container } from './NotFound.styles';
 
 export function NotFound(): JSX.Element {
   return (

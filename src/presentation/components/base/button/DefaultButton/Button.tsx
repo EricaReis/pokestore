@@ -1,5 +1,5 @@
-import { DefaultButtonProps } from "./Button.interfaces";
-import { Container, StyledButton } from "./Button.styles";
+import { DefaultButtonProps } from './Button.interfaces';
+import { Container, StyledButton } from './Button.styles';
 
 export default function DefaultButton({
   title,

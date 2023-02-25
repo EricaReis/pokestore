@@ -1,16 +1,16 @@
-import api from "../api";
+import api from '../api';
 import {
   IPersistencePokemonList,
   IPersistencePokemonData,
   IDomainPokemonData,
-} from "../pokemon/pokemonService.types";
-import { PokemonDataMapper, PokemonListMapper } from "./mappers";
+} from '../pokemon/pokemonService.types';
+import { PokemonDataMapper, PokemonListMapper } from './mappers';
 
 const limit = 8;
 
 class PokemonService {
   async getAllPokemons(): Promise<IPersistencePokemonList> {
-    const { data } = await api.get<IPersistencePokemonList>("/pokemon", {
+    const { data } = await api.get<IPersistencePokemonList>('/pokemon', {
       params: {
         limit: limit,
       },

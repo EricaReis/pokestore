@@ -1,4 +1,4 @@
-import { Container } from "./Home.styles";
+import { Container } from './Home.styles';
 
 export default function Home(): JSX.Element {
   return (
