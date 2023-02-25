@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import CardPokemon from "../../components/common/CardPokemon/CardPokemon";
-import { IPokemon } from "../../../data/services/pokemon/pokemonService.types";
+import CardPokemon from "presentation/components/common/CardPokemon/CardPokemon";
+import { IPokemon } from "data/services/pokemon/pokemonService.types";
 import { Container, CardsContainer, ContainerPokemon } from "./Adoption.styles";
-import pokemonService from "../../../data/services/pokemon/pokemon.service";
+import pokemonService from "data/services/pokemon/pokemon.service";
 
 export default function Adoption(): JSX.Element {
   const [pokemonList, setPokemonList] = useState<IPokemon[]>([]);

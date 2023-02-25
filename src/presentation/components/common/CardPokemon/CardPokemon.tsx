@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import pokemonService from "../../../../data/services/pokemon/pokemon.service";
-import { IDomainPokemonData } from "../../../../data/services/pokemon/pokemonService.types";
+import pokemonService from "data/services/pokemon/pokemon.service";
+import { IDomainPokemonData } from "data/services/pokemon/pokemonService.types";
 
 import { CardPokemonProps } from "./CardPokemon.interfaces";
 import { Container } from "./CardPokemon.styles";

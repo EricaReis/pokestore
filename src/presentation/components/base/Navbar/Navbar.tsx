@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Button from "../button/DefaultButton/Button";
+import Button from "presentation/components/base/button/DefaultButton/Button";
 import { Container, ButtonContainer } from "./Navbar.styles";
 
 export default function Navbar(): JSX.Element {
