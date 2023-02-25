@@ -1,7 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
+
 import { type AppDispatchType, type RootStateType } from 'data/store/store';
+
 import { changeLang } from './lang.slice';
-import { IUseLang, LanguageKeyType } from './langSlice.types';
+
+import { type IUseLang, type LanguageKeyType } from './langSlice.types';
 
 export function useLang(): IUseLang {
   const { lang, currentLangKey } = useSelector(

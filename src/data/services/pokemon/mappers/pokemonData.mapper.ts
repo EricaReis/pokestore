@@ -1,8 +1,9 @@
 import {
-  IDomainPokemonData,
-  IPersistencePokemonData,
+  type IDomainPokemonData,
+  type IPersistencePokemonData,
 } from '../pokemonService.types';
 
+// eslint-disable-next-line @typescript-eslint/no-extraneous-class
 export class PokemonDataMapper {
   static toDomain(
     persistencePokemon: IPersistencePokemonData
