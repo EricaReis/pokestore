@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { StyledDefaultButtonProps } from "./Button.interfaces";
+import styled, { css } from 'styled-components';
+import { StyledDefaultButtonProps } from './Button.interfaces';
 
 export const Container = styled.div`
   display: flex;

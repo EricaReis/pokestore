@@ -1,18 +1,18 @@
-import Home from "presentation/pages/Home/Home.page";
-import Example from "presentation/pages/Example/Example.page";
-import Adoption from "presentation/pages/Adoption/Adoption.page";
+import Home from 'presentation/pages/Home/Home.page';
+import Example from 'presentation/pages/Example/Example.page';
+import Adoption from 'presentation/pages/Adoption/Adoption.page';
 
 export const routes = [
   {
-    path: "/",
+    path: '/',
     element: <Home />,
   },
   {
-    path: "/example",
+    path: '/example',
     element: <Example />,
   },
   {
-    path: "/adoption",
+    path: '/adoption',
     element: <Adoption />,
   },
 ];

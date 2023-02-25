@@ -1,8 +1,8 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
 
-import itemReducer from "./slices/item/Item.slice";
+import itemReducer from './slices/item/Item.slice';
 
-import langReducer from "./slices/lang/lang.slice";
+import langReducer from './slices/lang/lang.slice';
 
 const store = configureStore({
   reducer: { itemReducer, langReducer },
