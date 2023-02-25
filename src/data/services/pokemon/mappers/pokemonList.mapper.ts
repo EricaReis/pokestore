@@ -1,5 +1,6 @@
-import { IPersistencePokemonList, IPokemon } from '../pokemonService.types';
+import { type IPersistencePokemonList } from '../pokemonService.types';
 
+// eslint-disable-next-line @typescript-eslint/no-extraneous-class
 export class PokemonListMapper {
   static toDomain(
     persistencePokemon: IPersistencePokemonList

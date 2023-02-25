@@ -1,4 +1,5 @@
-import { LanguageKeyType } from 'data/store/slices/lang/langSlice.types';
+import { type LanguageKeyType } from 'data/store/slices/lang/langSlice.types';
+
 import { localStorageKeys } from 'shared/constants/localStorage.constant';
 
 const langStorage = {

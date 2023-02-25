@@ -1,7 +1,9 @@
-import langStorage from 'shared/storage/lang';
-import { langJSON } from 'shared/lang';
 import { createSlice } from '@reduxjs/toolkit';
-import { ILangSlice, LanguageKeyType } from './langSlice.types';
+
+import { langJSON } from 'shared/lang';
+import langStorage from 'shared/storage/lang';
+
+import { type ILangSlice, type LanguageKeyType } from './langSlice.types';
 
 const initialState: ILangSlice = {
   lang: langJSON,
