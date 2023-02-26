@@ -27,5 +27,5 @@ export const ButtonContainer = styled.div`
 export const ContainerIcons = styled.div`
   display: flex;
   margin-left: 4rem;
-  gap: 1rem;
+  gap: 2rem;
 `;

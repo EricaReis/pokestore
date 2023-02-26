@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { defaultTheme } from 'shared/styles/themes/default.theme';
+
 export const Container = styled.div`
   display: flex;
   border: solid transparent; /* !importanté */
@@ -9,6 +11,6 @@ export const Container = styled.div`
   border-image-source: linear-gradient(to right, red, orange);
 
   h3 {
-    color: white;
+    color: ${defaultTheme.colors.black};
   }
 `;
