@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 
+import { defaultTheme } from 'shared/styles/themes/default.theme';
+
 import { type IStyledDefaultButtonProps } from './Button.types';
 
 export const Container = styled.div`
@@ -9,18 +11,17 @@ export const Container = styled.div`
 export const StyledButton = styled.button<IStyledDefaultButtonProps>`
   display: flex;
   border: none;
-  box-sizing: border-box;
-  background-color: #634d78;
+  background-color: ${defaultTheme.colors.white};
   border-radius: 20rem;
-  color: #f5f5f5;
-  padding: 0.3rem 1rem;
+  color: ${defaultTheme.colors.black};
+  padding: 1rem 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: all 0.2s ease-in;
+  transition: all 0.15s ease-in;
   font-weight: 600;
-  font-size: 1rem;
 
   &:hover {
-    background-color: purple;
+    background-color: ${defaultTheme.colors.pink};
+    color: ${defaultTheme.colors.white};
   }
 
   &:disabled {
@@ -33,16 +34,28 @@ export const StyledButton = styled.button<IStyledDefaultButtonProps>`
     css`
       background-color: transparent;
       box-shadow: none;
+      color: ${defaultTheme.colors.white};
 
       &:hover {
         background-color: transparent;
-        color: black;
+        color: ${defaultTheme.colors.pink};
       }
     `}
 
   ${({ outlined }) =>
     outlined &&
     css`
-      border: 1px solid #f5f5f5;
+      border: 1px solid;
+      border-color: ${defaultTheme.colors.pink};
+      background-color: transparent;
+      color: ${defaultTheme.colors.white};
+      border-radius: 1em;
+
+      &:hover {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: ${defaultTheme.colors.white};
+        color: ${defaultTheme.colors.white};
+      }
     `}
 `;

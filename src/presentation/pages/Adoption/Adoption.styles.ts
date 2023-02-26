@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
+import { defaultTheme } from 'shared/styles/themes/default.theme';
+
 export const Container = styled.div`
   display: flex;
-  width: 100%;
-  height: 100%;
   flex-direction: column;
-  background-color: black;
+  background-color: ${defaultTheme.colors.darkestPurple};
+  min-height: calc(100vh - 6rem);
 `;
 
 export const ContainerPokemon = styled.div`
   display: flex;
-  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
