@@ -7,7 +7,7 @@ export const Container = styled.div`
   width: 100%;
   justify-content: space-between;
   background-color: ${defaultTheme.colors.darkPurple};
-  height: 60px;
+  height: 6rem;
   align-items: center;
   padding-left: 4rem;
   padding-right: 4rem;

@@ -49,6 +49,7 @@ export const StyledButton = styled.button<IStyledDefaultButtonProps>`
       border-color: ${defaultTheme.colors.pink};
       background-color: transparent;
       color: ${defaultTheme.colors.white};
+      border-radius: 1em;
 
       &:hover {
         background-color: transparent;

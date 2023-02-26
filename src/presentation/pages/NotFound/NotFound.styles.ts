@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { defaultTheme } from 'shared/styles/themes/default.theme';
+
 export const Container = styled.div`
   position: fixed;
   height: 100vh;
@@ -10,9 +12,9 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: ${defaultTheme.colors.darkestPurple};
 
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.white};
+  color: ${defaultTheme.colors.white};
   text-align: center;
 
   img {
