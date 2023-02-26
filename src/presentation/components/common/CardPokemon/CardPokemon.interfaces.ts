@@ -1,3 +1,3 @@
-export interface CardPokemonProps {
+export interface ICardPokemonProps {
   name: string;
 }

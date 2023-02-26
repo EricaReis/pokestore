@@ -1,19 +1,22 @@
 import { useEffect, useState } from 'react';
-import CardPokemon from 'presentation/components/common/CardPokemon/CardPokemon';
-import { IPokemon } from 'data/services/pokemon/pokemonService.types';
-import { Container, CardsContainer, ContainerPokemon } from './Adoption.styles';
+
 import pokemonService from 'data/services/pokemon/pokemon.service';
+import { type IPokemon } from 'data/services/pokemon/pokemonService.types';
+
+import CardPokemon from 'presentation/components/common/CardPokemon/CardPokemon.component';
+
+import { CardsContainer, Container, ContainerPokemon } from './Adoption.styles';
 
 export default function Adoption(): JSX.Element {
   const [pokemonList, setPokemonList] = useState<IPokemon[]>([]);
 
-  async function getPokemons() {
+  async function getPokemons(): Promise<void> {
     const response = await pokemonService.getAllPokemons();
     setPokemonList(response.results);
   }
 
   useEffect(() => {
-    getPokemons();
+    void getPokemons();
   }, []);
 
   return (

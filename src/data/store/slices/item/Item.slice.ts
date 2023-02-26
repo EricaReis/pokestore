@@ -8,9 +8,7 @@ const slice = createSlice({
   name: 'item',
   initialState,
   reducers: {
-    setFavoriteItem: (state, action) => {
-      console.log(state, action);
-    },
+    setFavoriteItem: () => {},
   },
 });
 
