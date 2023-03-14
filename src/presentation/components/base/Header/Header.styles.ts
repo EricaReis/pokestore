@@ -15,6 +15,11 @@ export const Container = styled.div`
   img {
     width: 11rem;
     cursor: pointer;
+    transition-duration: 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 `;
 

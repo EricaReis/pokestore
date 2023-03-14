@@ -16,6 +16,7 @@ export const StyledButton = styled.button`
   &:hover {
     cursor: pointer;
     color: ${defaultTheme.colors.pink};
+    transform: scale(1.1);
   }
 
   svg {
