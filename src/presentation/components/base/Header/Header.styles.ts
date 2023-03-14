@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
-import { defaultTheme } from 'shared/styles/themes/default.theme';
-
 export const Container = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: ${defaultTheme.colors.darkPurple};
+  background-color: ${({ theme }) => theme.colors.darkPurple};
   height: 6rem;
   align-items: center;
   padding-left: 4rem;
@@ -15,6 +13,11 @@ export const Container = styled.div`
   img {
     width: 11rem;
     cursor: pointer;
+    transition-duration: 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 `;
 
