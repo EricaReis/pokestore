@@ -23,9 +23,10 @@ function App(): JSX.Element {
   return (
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
-        <GlobalStyles />
         <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
+
         <ThemeProvider theme={defaultTheme}>
+          <GlobalStyles />
           <BrowserRouter>
             <AppRoutes />
           </BrowserRouter>
