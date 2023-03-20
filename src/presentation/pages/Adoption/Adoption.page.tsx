@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import pokemonService from 'data/services/pokemon/pokemon.service';
 import { type IPokemon } from 'data/services/pokemon/pokemonService.types';
 
-import CardPokemon from 'presentation/components/common/CardPokemon/CardPokemon.component';
+import CardPokemon from 'presentation/components/global/CardPokemon/CardPokemon.component';
 
 import { CardsContainer, Container, ContainerPokemon } from './Adoption.styles';
 
