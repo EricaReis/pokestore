@@ -1,14 +1,14 @@
 import { useCallback, useEffect, useState } from 'react';
 
 import pokemonService from 'data/services/pokemon/pokemon.service';
-import { type IDomainPokemonData } from 'data/services/pokemon/pokemonService.types';
+import { type DomainPokemonDataType } from 'data/services/pokemon/pokemonService.types';
 
 import { type ICardPokemonProps } from './CardPokemon.interfaces';
 
 import { Container } from './CardPokemon.styles';
 
 export default function CardPokemon({ name }: ICardPokemonProps): JSX.Element {
-  const [pokemonInfo, setPokemonInfo] = useState<IDomainPokemonData>();
+  const [pokemonInfo, setPokemonInfo] = useState<DomainPokemonDataType>();
 
   const getPokemonData = useCallback(async () => {
     const response = await pokemonService.getPokemon(name);

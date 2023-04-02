@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 export interface IPokemon {
   name: string;
   url: string;
@@ -10,7 +11,7 @@ export interface IPersistencePokemonList {
   results: IPokemon[];
 }
 
-export type Specie = {
+export type SpecieType = {
   color: string;
   description: string;
   specie: string;
@@ -38,7 +39,7 @@ export type PokemonType =
   | 'steel'
   | 'water';
 
-export interface Sprites {
+export interface ISprites {
   back_default: string | undefined;
   back_female: string | undefined;
   back_shiny: string | undefined;
@@ -49,7 +50,7 @@ export interface Sprites {
   front_shiny_female: string | undefined;
 }
 
-export interface Types {
+export interface ITypes {
   slot: number;
   type: {
     name: string;
@@ -57,15 +58,15 @@ export interface Types {
   };
 }
 
-export type IPersistencePokemonData = {
+export type PersistencePokemonDataType = {
   id: number;
   name: string;
-  sprites: Sprites;
+  sprites: ISprites;
   height: number;
   weight: number;
   stats: { name: string; baseStat: number }[];
-  types: Types[];
-  species: Specie | null;
+  types: ITypes[];
+  species: SpecieType | null;
   abilities: {
     ability: {
       name: string;
@@ -74,15 +75,15 @@ export type IPersistencePokemonData = {
   }[];
 };
 
-export type IDomainPokemonData = {
+export type DomainPokemonDataType = {
   id: number;
   name: string;
-  sprites: Sprites;
+  sprites: ISprites;
   height: number;
   weight: number;
   stats: { name: string; baseStat: number }[];
-  types: Types[];
-  species: Specie | null;
+  types: ITypes[];
+  species: SpecieType | null;
   abilities: {
     ability: {
       name: string;

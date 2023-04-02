@@ -1,5 +1,4 @@
-import CardPokemon from 'presentation/components/common/CardPokemon/CardPokemon.component';
-
+import { CardPokemon } from './components';
 import { useAdoption } from './useAdoption';
 
 import { CardsContainer, Container, ContainerPokemon } from './Adoption.styles';
