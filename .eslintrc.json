@@ -18,7 +18,12 @@
   "plugins": ["react", "prettier", "simple-import-sort"],
   "rules": {
     "no-console": "warn",
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/naming-convention": [
@@ -38,7 +43,7 @@
         "format": ["camelCase", "PascalCase"]
       },
       {
-        "selector":  ["function"],
+        "selector": ["function"],
         "format": ["camelCase", "PascalCase"]
       }
     ],
