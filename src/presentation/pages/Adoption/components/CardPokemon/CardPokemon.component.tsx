@@ -7,7 +7,7 @@ import { type ICardPokemonProps } from './CardPokemon.interfaces';
 
 import { Container } from './CardPokemon.styles';
 
-export default function CardPokemon({ name }: ICardPokemonProps): JSX.Element {
+export function CardPokemon({ name }: ICardPokemonProps): JSX.Element {
   const [pokemonInfo, setPokemonInfo] = useState<DomainPokemonDataType>();
 
   const getPokemonData = useCallback(async () => {
